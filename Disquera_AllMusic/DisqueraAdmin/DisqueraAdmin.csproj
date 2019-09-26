@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B215436-95F1-4D46-8E7C-8296E771B552}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DisqueraAdmin</RootNamespace>
+    <AssemblyName>DisqueraAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GUI\ArtistaDisquera.aspx" />
+    <Content Include="GUI\Artistas.aspx" />
+    <Content Include="GUI\Clientes.aspx" />
+    <Content Include="GUI\Discos.aspx" />
+    <Content Include="GUI\Disquera.aspx" />
+    <Content Include="GUI\Genero.aspx" />
+    <Content Include="GUI\Inicio.aspx" />
+    <Content Include="GUI\Login.aspx" />
+    <Content Include="GUI\Logout.aspx" />
+    <Content Include="GUI\Usuarios.aspx" />
+    <Content Include="src\fonts\fontawesome-webfont.eot" />
+    <Content Include="src\fonts\fontawesome-webfont.ttf" />
+    <Content Include="src\fonts\fontawesome-webfont.woff" />
+    <Content Include="src\fonts\fontawesome-webfont.woff2" />
+    <Content Include="src\fonts\FontAwesome.otf" />
+    <Content Include="src\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="src\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="src\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="src\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="src\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="src\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="src\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="src\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="src\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="src\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="src\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="src\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="src\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="src\iconfont\codepoints" />
+    <Content Include="src\iconfont\MaterialIcons-Regular.eot" />
+    <Content Include="src\iconfont\MaterialIcons-Regular.ijmap" />
+    <Content Include="src\iconfont\MaterialIcons-Regular.ttf" />
+    <Content Include="src\iconfont\MaterialIcons-Regular.woff" />
+    <Content Include="src\iconfont\MaterialIcons-Regular.woff2" />
+    <Content Include="src\iconfont\README.md" />
+    <Content Include="src\AdminAllMusic.Master" />
+    <Content Include="dsDisqueraAdmin.xsc">
+      <DependentUpon>dsDisqueraAdmin.xsd</DependentUpon>
+    </Content>
+    <None Include="dsDisqueraAdmin.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDisqueraAdmin.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="dsDisqueraAdmin.xss">
+      <DependentUpon>dsDisqueraAdmin.xsd</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\css\animations.css" />
+    <Content Include="src\css\Customer.css" />
+    <Content Include="src\css\font-awesome.min.css" />
+    <Content Include="src\css\ghpages-materialize.css" />
+    <Content Include="src\css\icon.css" />
+    <Content Include="src\css\materialize.css" />
+    <Content Include="src\css\materialize.min.css" />
+    <Content Include="src\css\prism.css" />
+    <Content Include="src\css\style.css" />
+    <Content Include="src\fonts\fontawesome-webfont.svg" />
+    <Content Include="src\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="src\iconfont\material-icons.css" />
+    <Content Include="src\iconfont\MaterialIcons-Regular.svg" />
+    <Content Include="src\Img\00-250x250.jpg" />
+    <Content Include="src\Img\00000-250x250.jpg" />
+    <Content Include="src\Img\00000-450x450.jpg" />
+    <Content Include="src\Img\12-450x450.jpg" />
+    <Content Include="src\Img\13-250x250.jpg" />
+    <Content Include="src\Img\13-450x450.jpg" />
+    <Content Include="src\Img\2-250x250.jpg" />
+    <Content Include="src\Img\20-450x450.jpg" />
+    <Content Include="src\Img\21-450x450.jpg" />
+    <Content Include="src\Img\22-700x450.jpg" />
+    <Content Include="src\Img\241-450x450.jpg" />
+    <Content Include="src\Img\27-450x450.jpg" />
+    <Content Include="src\Img\27-700x450.jpg" />
+    <Content Include="src\Img\3-450x450.jpg" />
+    <Content Include="src\Img\33-450x450.jpg" />
+    <Content Include="src\Img\35-250x250.jpg" />
+    <Content Include="src\Img\37-450x450.jpg" />
+    <Content Include="src\Img\4-450x450.jpg" />
+    <Content Include="src\Img\41-250x250.jpg" />
+    <Content Include="src\Img\42-450x450 -2.jpg" />
+    <Content Include="src\Img\42-450x450.jpg" />
+    <Content Include="src\Img\42-700x450.jpg" />
+    <Content Include="src\Img\9-450x450.jpg" />
+    <Content Include="src\Img\blog_img1.jpg" />
+    <Content Include="src\Img\blog_img2.jpg" />
+    <Content Include="src\Img\blog_img3.jpg" />
+    <Content Include="src\Img\blog_img4.jpg" />
+    <Content Include="src\Img\empty-700x450.jpg" />
+    <Content Include="src\Img\Event-Slider-One.png" />
+    <Content Include="src\Img\Gallery-Slide.png" />
+    <Content Include="src\Img\holder_wide1.jpg" />
+    <Content Include="src\Img\holder_wide2.jpg" />
+    <Content Include="src\Img\ic_account_circle_black_48dp.png" />
+    <Content Include="src\Img\ic_add_shopping_cart_black_18dp.png" />
+    <Content Include="src\Img\ic_add_shopping_cart_white_36dp.png" />
+    <Content Include="src\Img\ic_add_shopping_cart_white_48dp.png" />
+    <Content Include="src\Img\ic_attach_money_black_18dp.png" />
+    <Content Include="src\Img\ic_exit_to_app_white_24dp.png" />
+    <Content Include="src\Img\ic_exit_to_app_white_36dp.png" />
+    <Content Include="src\Img\ic_print_white_36dp.png" />
+    <Content Include="src\Img\ic_remove_shopping_cart_black_18dp.png" />
+    <Content Include="src\Img\ic_search_black_18dp.png" />
+    <Content Include="src\Img\ic_search_white_18dp.png" />
+    <Content Include="src\Img\ic_shopping_cart_white_36dp.png" />
+    <Content Include="src\Img\logo.png" />
+    <Content Include="src\Img\logoA.png" />
+    <Content Include="src\Img\LogoAM.ico" />
+    <Content Include="src\Img\LogoAM.png" />
+    <Content Include="src\Img\Main-Slide1.png" />
+    <Content Include="src\Img\MaterialFontLogin.jpg" />
+    <Content Include="src\Img\Music-Sliders.png" />
+    <Content Include="src\Img\photo-14.jpg" />
+    <Content Include="src\Img\photo-1429305254053-2a1bfe816f36-700x450.jpg" />
+    <Content Include="src\Img\photo-1432563491239-ba8bb919518e-250x250.jpg" />
+    <Content Include="src\Img\photo-1432563491239-ba8bb919518e-450x450.jpg" />
+    <Content Include="src\Img\photo-1432838765905-6881a8585474-700x450.jpg" />
+    <Content Include="src\Img\photo-1435458983855-85e70c381591-700x450.jpg" />
+    <Content Include="src\Img\photo-1435575606138-4edaccd24021-700x450.jpg" />
+    <Content Include="src\Img\photo-1436128003323-97dab5d267a9-700x450.jpg" />
+    <Content Include="src\Img\photo-1436191138407-f140f6dea937-450x450.jpg" />
+    <Content Include="src\Img\photo-1436759644647-e274ee931eaa-700x450.jpg" />
+    <Content Include="src\Img\slider_pic1.jpg" />
+    <Content Include="src\Img\slider_pic2.jpg" />
+    <Content Include="src\Img\slider_pic3.jpg" />
+    <Content Include="src\Img\Video-Slide.png" />
+    <Content Include="src\js\init.js" />
+    <Content Include="src\js\jquery-2.1.4.min.js" />
+    <Content Include="src\js\jquery.mask.js" />
+    <Content Include="src\js\jquery.mask.min.js" />
+    <Content Include="src\js\materialize.js" />
+    <Content Include="src\js\materialize.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dsDisqueraAdmin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDisqueraAdmin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ArtistaDisquera.aspx.cs">
+      <DependentUpon>ArtistaDisquera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ArtistaDisquera.aspx.designer.cs">
+      <DependentUpon>ArtistaDisquera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Artistas.aspx.cs">
+      <DependentUpon>Artistas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Artistas.aspx.designer.cs">
+      <DependentUpon>Artistas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Discos.aspx.cs">
+      <DependentUpon>Discos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Discos.aspx.designer.cs">
+      <DependentUpon>Discos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Disquera.aspx.cs">
+      <DependentUpon>Disquera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Disquera.aspx.designer.cs">
+      <DependentUpon>Disquera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Genero.aspx.cs">
+      <DependentUpon>Genero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Genero.aspx.designer.cs">
+      <DependentUpon>Genero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\AdminAllMusic.Master.cs">
+      <DependentUpon>AdminAllMusic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="src\AdminAllMusic.Master.designer.cs">
+      <DependentUpon>AdminAllMusic.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Albums\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AllMusic_DLL\AllMusic_DLL.csproj">
+      <Project>{9aff457d-bc81-49f5-97b4-7ad24d3a3171}</Project>
+      <Name>AllMusic_DLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52572</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52572/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

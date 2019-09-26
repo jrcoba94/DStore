@@ -1,0 +1,180 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="VentasAllMusic.master.cs" Inherits="DisqueraVentas.src.VentasAllMusic" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>U-Sound</title>
+
+    <link rel="shortcut icon" href="../src/Img/logoAM.ico" />
+    <link href="css/ghpages-materialize.css" rel="stylesheet" />
+    <link href="../src/css/materialize.css" rel="stylesheet" />
+    <link href="../src/css/materialize.min.css" rel="stylesheet" />
+    <link href="../src/iconfont/material-icons.css" rel="stylesheet" />
+    <link href="../src/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../src/css/animations.css" rel="stylesheet" />
+    <link href="../src/css/prism.css" rel="stylesheet" />
+
+    <script src="../src/js/jquery-2.1.4.min.js"></script>
+    <script src="../src/js/jquery.mask.js"></script>
+    <script src="../src/js/jquery.mask.min.js"></script>
+    <script src="../src/js/materialize.js"></script>
+    <script src="../src/js/materialize.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="container">
+                <a href="#" data-activates="nav-mobile" class="button-collapse top-nav hide-on-large-only">
+                    <i class="material-icons black">menu</i>
+                </a>
+            </div>
+
+            <ul id="nav-mobile" class="side-nav fixed z-depth-5" style="background: #212121">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="../src/Img/42-450x450 -2.jpg" />
+                        </div>
+                        <img class="circle" src="../src/Img/13-250x250.jpg" />
+                        <a href="#!name"><span class="white-text name">
+                            <asp:Label ID="txtUser" runat="server">User_name</asp:Label></span></a>
+                        <a href="#!email"><span class="white-text email">
+                            <asp:Label ID="txtEmail" runat="server">E-mail</asp:Label></span></a>
+                        <a href="#!email"><span>
+                            <asp:LinkButton ID="lbtnSalir" runat="server" CssClass="white-text tooltipped" data-position="right" data-delay="50" data-tooltip="Cerrar sesión" OnClick="lbtnSalir_Click" Visible="False"><img src="../src/Img/ic_exit_to_app_white_24dp.png"/></asp:LinkButton></span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="divider" style="background: #45B39D"></div>
+                </li>
+                <li class="bold">
+                    <a href="Inicio.aspx" class="waves-effect waves-teal white-text">Inicio</a>
+                </li>
+                <li>
+                    <div class="divider" style="background: #45B39D"></div>
+                </li>
+                <li class="bold">
+                    <a href="Discos.aspx" class="waves-effect waves-teal white-text">Productos</a>
+                </li>
+                <li>
+                    <div class="divider" style="background: #45B39D"></div>
+                </li>
+                <li class="bold">
+                    <a href="Servicios.aspx" class="waves-effect waves-teal white-text">Servicios</a>
+                </li>
+                <li>
+                    <div class="divider" style="background: #45B39D"></div>
+                </li>
+                <li class="bold">
+                    <a href="Conocenos.aspx" class="waves-effect waves-teal white-text">Conocenos</a>
+                </li>
+                <li>
+                    <div class="divider" style="background: #45B39D"></div>
+                </li>
+                <li class="bold">
+                    <a href="Contacto.aspx" class="waves-effect waves-teal white-text">Contacto</a>
+                </li>
+                <li>
+                    <div class="divider" style="background: #45B39D"></div>
+                </li>
+                <li>
+                    <div class="divider" style="background: #45B39D"></div>
+                </li>
+                <li>
+                    <div>
+                        <br />
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <a class="fa fa-facebook-square white-text" style="font-size:30px"></a>
+                        <a class="fa fa-twitter-square white-text" style="font-size:30px"></a>
+                        <a class="fa fa-youtube-square white-text" style="font-size:30px"></a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <br /><br />
+                    </div>
+                </li>
+            </ul>
+        </header>
+
+        <main class="col s12">
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+        </main>
+
+        <section>
+            <div class="col s12" style="height: 55px"></div>
+        </section>
+
+        <footer class="page-footer" style="background-color: rgba(0, 0, 0, 0.16)">
+            <div class="">
+                <div class="row">
+                    <div class="container">
+                        <div class="col l4 s12 marbot15 wow fadeInLeft animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                            <div class="footer-title" style="font-size: 18px; color: #45B39D">
+                                Ubicación
+                            </div>
+                            <p class="black-text" style="font-size: 12px">
+                                #323, Prolongación Paseo de Montejo,
+                            <br />
+                                Mérida, Yuc 97289, Mex<br />
+                                +123-456-7890
+                            </p>
+                        </div>
+                        <div class="col l4 s12 marbot15 wow fadeInRight animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInRight;">
+                        </div>
+                        <div class="col l4 s12 marbot15 wow fadeInRight animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInRight;">
+                            <div class="footer-title" style="font-size: 18px; color: #45B39D">
+                                Horarios
+                            </div>
+                            <p class="black-text" style="font-size: 12px">
+                                Lun - Mar: 4:45 PM - 10:30 PM
+                            <br />
+                                Vie: 4:45 PM - 11 PM
+                            <br />
+                                Sab: 4:30 PM - 11 PM
+                            <br />
+                                Dom: 5:00 PM - 10:30 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer style="background-color: rgba(0, 0, 0, 0.91); height: 80px">
+            <div class="row">
+
+                <div class="col s2"></div>
+                <div class="col s8">
+                    <div class="col l4 s12 center">
+                        <img class="responsive-img" src="../src/Img/logoAM.png" />
+                    </div>
+                    <br />
+                    <div class="col l4 s12 valign center" style="color: lightgray">
+                        © 2015 materials, All rights reserved.       
+                    </div>
+                </div>
+                <div class="col s2"></div>
+            </div>
+        </footer>
+    </form>
+    <script>
+        $(".button-collapse").sideNav({
+            edge: 'left'
+        });
+        $(document).ready(function () {
+            $('.tooltipped').tooltip({ delay: 50 });
+        });
+    </script>
+</body>
+</html>

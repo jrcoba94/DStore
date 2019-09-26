@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disquera_AllMusic", "Disquera_AllMusic\Disquera_AllMusic.csproj", "{9EE80275-408F-4BC7-B65B-86B3F3B4927E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllMusic_DLL", "AllMusic_DLL\AllMusic_DLL.csproj", "{9AFF457D-BC81-49F5-97B4-7AD24D3A3171}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisqueraAdmin", "DisqueraAdmin\DisqueraAdmin.csproj", "{3B215436-95F1-4D46-8E7C-8296E771B552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisqueraVentas", "DisqueraVentas\DisqueraVentas.csproj", "{41BDD6E0-4AD9-4BD5-A3B3-E7AC87FCD96A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EE80275-408F-4BC7-B65B-86B3F3B4927E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE80275-408F-4BC7-B65B-86B3F3B4927E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE80275-408F-4BC7-B65B-86B3F3B4927E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE80275-408F-4BC7-B65B-86B3F3B4927E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFF457D-BC81-49F5-97B4-7AD24D3A3171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFF457D-BC81-49F5-97B4-7AD24D3A3171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFF457D-BC81-49F5-97B4-7AD24D3A3171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFF457D-BC81-49F5-97B4-7AD24D3A3171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B215436-95F1-4D46-8E7C-8296E771B552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B215436-95F1-4D46-8E7C-8296E771B552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B215436-95F1-4D46-8E7C-8296E771B552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B215436-95F1-4D46-8E7C-8296E771B552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41BDD6E0-4AD9-4BD5-A3B3-E7AC87FCD96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BDD6E0-4AD9-4BD5-A3B3-E7AC87FCD96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BDD6E0-4AD9-4BD5-A3B3-E7AC87FCD96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BDD6E0-4AD9-4BD5-A3B3-E7AC87FCD96A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
